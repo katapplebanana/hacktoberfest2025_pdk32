@@ -9,4 +9,4 @@ Step 3: (1) Add a function that is related to your algorithm study under algorit
             Please add your test case so that the test_suite() runs without assertion erros. Follow the examples there.
         (2) Add your name to CONTRIBUTING.md file
 
-Step 4: Push it to you master branch. Then request PR. I will review it and merge if all looks good.
+Step 4: Push it to you master branch. Then request a PR. I will review it and merge if all looks good.
