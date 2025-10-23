@@ -26,11 +26,11 @@ def smile():
 	print("   00         00   ")
 	print("     000000000     ")
 
-# add the insertion sort function for lists of numbers (increasing order)
+# add an insertion sort function for lists of numbers (increasing order)
 def insertion_sort(l):
 	N = len(l)
 	if(N < 2):
-		return
+		return l
 	for i in range(N):
 		insertion_value = l[i]
 		inserted = False
@@ -45,6 +45,20 @@ def insertion_sort(l):
 			l[0] = insertion_value
 	return l
 
+# add a function that reverse a list of elements
+def reverse_list(l):
+	N = len(l)
+	if(N < 2):
+		return l
+	i, j = 0, N-1
+	while(i < j):
+		temp = l[i]
+		l[i] = l[j]
+		l[j] = temp
+		i += 1
+		j -= 1
+	return l
+
 # test suite
 def test_suite():
 	assert add(1, 2)==3
@@ -52,6 +66,7 @@ def test_suite():
 	assert divide(6, 2)==3
 	assert multiply(2,3)==6
 	assert insertion_sort([5,4,3,2,1])==[1,2,3,4,5]
+	assert reverse_list([1,2,3,4,5])==[5,4,3,2,1]
 
 	print("passed all tests")
 	smile()
