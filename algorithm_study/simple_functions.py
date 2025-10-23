@@ -14,6 +14,18 @@ def divide(a, b):
 def multiply(a,b):
 	return a*b
 
+# add a image of a smile face
+def smile():
+	print("     000000000     ")
+	print("   00         00   ")
+	print("  0             0  ")
+	print(" 0    00   00    0 ")
+	print(" 0               0 ")
+	print(" 0    0     0    0 ")
+	print("  0    00000    0  ")
+	print("   00         00   ")
+	print("     000000000     ")
+
 # test suite
 def test_suite():
 	assert add(1, 2)==3
@@ -21,6 +33,7 @@ def test_suite():
 	assert divide(6, 2)==3
 	assert multiply(2,3)==6
 	print("passed all tests")
+	smile()
 
 
 #############################
